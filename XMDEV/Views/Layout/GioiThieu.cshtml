@@ -1,0 +1,321 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/GT2.css">
+    <link rel="stylesheet" href="~/css/GT.css">
+    <link rel="stylesheet" href="~/css/miniCart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="~/css/font.css">
+    <link rel="stylesheet" href="~/font/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <title>Xưởng mộc giá tốt|xuongmotgiatot</title>
+    <style>
+        .slide .slick-prev:before, .slide .slick-next:before {
+            font-size: 30px;
+            color: #bd945f;
+        }
+
+        .slide2 .slick-prev:before, .slide2 .slick-next:before {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <section class="main_nav_header" style="background-color: rgb(254, 254, 254);">
+        <div class="HeaderPC container">
+            <div class="logoHeader col-md-2 col-sm-4">
+                <a href="xuongmoc.html">
+                    <img src="~/img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="menuMain col-md-8 col-sm-9">
+                <ul>
+                    <li><a href="/Layout/Index" class="active">Trang Chủ</a></li>
+                    <li class="activeS"><a href="/Layout/GioiThieu">Giới Thiệu</a></li>
+                    <li><a href="/Layout/SanPham">Sản Phẩm</a></li>
+                    <li><a href="/Layout/TinTuc">Tin Tức</a></li>
+                    <li><a href="/Layout/DoiTac">Đối Tác</a></li>
+                    <li><a href="/Layout/LienHe">Liên Hệ</a></li>
+                </ul>
+            </div>
+            <div class="iconHeader col-md-2 col-sm-4">
+                <div class="iconCart" id="turnon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="iconUser">
+                    <a href=""><i class="fa-solid fa-user"></i></a>
+                </div>
+            </div>
+            <div class="button2 col-sm-4">
+                <div class="span"></div>
+                <div class="span"></div>
+                <div class="span"></div>
+            </div>
+        </div>
+        <div class="HeaderMobile container">
+            <div class="container">
+                <div class="iconHeader col-md-2 col-sm-4">
+                    <div class="iconCart" id="turnon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="iconUser">
+                        <a href=""><i class="fa-solid fa-user"></i></a>
+                    </div>
+                </div>
+                <div class="logoHeader col-md-2 col-sm-4">
+                    <a href="xuongmoc.html">
+                        <img src="~/img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="menuMain col-md-8 col-sm-9">
+                    <ul>
+                        <li><a href="/Layout/Index" class="active">Trang Chủ</a></li>
+                        <li><a href="/Layout/GioiThieu">Giới Thiệu</a></li>
+                        <li><a href="/Layout/SanPham">Sản Phẩm</a></li>
+                        <li><a href="/Layout/TinTuc">Tin Tức</a></li>
+                        <li><a href="/Layout/DoiTac">Đối Tác</a></li>
+                        <li><a href="/Layout/LienHe">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="button2 col-sm-4">
+                    <div class="span"></div>
+                    <div class="span"></div>
+                    <div class="span"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="header_banner">
+        <div class="banner_img ">
+            <img src="~/img/gioithieu.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="content-center">
+        <div class="container">
+            <div class="establish">
+                <h2 class="title-border">Thành lập & Phát triển</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <div class="content-img">
+                        <img src="~/img/gt_1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="establish-content">
+                        <p>Nội thất Hoàng Hoan được xây dựng dựa trên tình yêu, đam mê của tôi đối với nghề mộc và khao khát mang những sản phẩm nội thất đẹp của mình đến với khách hàng thân yêu.</p>
+                        <p>Cả 1 quá trình từ 1 người thợ phụ rồi được làm thợ mộc chính, tự tạo ra cho mình 1 phân xưởng nhỏ đến phát triển và hiện tại Hoàng Hoan đã là 1 trong những công ty có dịch vụ thiết kế và thi công nội thất uy tín chất lượng với giá tốt nhất tại Hà Nội với sứ mệnh "đem đến cho khách hàng không gian nội thất hoàn hỏa".</p>
+                        <p>Hoàng Hoan luôn nỗ lực để tạo ra không gian đẹp cho khách hàng theo nhiều gam màu sắc khác nhau và phong cách đa dạng, theo đúng sở thích, lứa tuổi và phong thủy của khách hàng.</p>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+            <h2 class="title-border">Tầm nhìn</h2>
+
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 vision">
+                    <div class="vision-img">
+                        <img src="/img/gt_tamNhin.jpg" alt="">
+                    </div>
+                    <div class="vision-content">
+                        <p>Chúng tôi luông hướng đến việc tạo ra các sản phẩm nội thất trên triết lý tôn trọng và giữ gìn những gì tự nhiên đã ban tặng cho con người. Chúng tôi luôn tìm tòi và ứng dụng các giải pháp sản phẩm và công nghệ tiên tiến nhất, hợp tác với các đối tác công nghệ hàng đầu thế giới, tìm kiếm và phát triển các vùng nguyên liệu tự nhiên được thiên nhiên chọn lọc, ưu đãi trong nước lẫn nước ngoài, tất cả nhằm tạo ra các sản phẩm nội thất tự nhiên gần gữi cho người khách hàng Việt Nam.</p>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+            <h2 class="title-border">Sứ mệnh</h2>
+            <div class="row pb-3">
+                <div class="col-md-6">
+                    <div class="mission">
+                        <div class="mission-img">
+                            <img src="~/img/sumenh1.jpg" alt="">
+                        </div>
+                        <div class="mission_content">
+                            <h6>Với xã hội</h6>
+                            <p>Hài hòa lợi ích doanh nghiệp với lợi ích xã hội, tích cực cùng cộng đồng xây dựng môi trường sống bền vững</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mission">
+                        <div class="mission-img">
+                            <img src="~/img/sumenh2.jpg" alt="">
+                        </div>
+                        <div class="mission_content">
+                            <h6>Với nhân viên</h6>
+                            <p>Xây dựng môi trường làm việc chuyên nghiệp, năng động, sáng tạo và nhân văn.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mission">
+                        <div class="mission-img">
+                            <img src="~/img/sumenh3.jpg" alt="">
+                        </div>
+                        <div class="mission_content">
+                            <h6>Với đối tác</h6>
+                            <p>Đề cao tinh thần hợp tác cùng phát triển, cam kết trở thành "Người đồng hành số 1" của các đối tác.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mission">
+                        <div class="mission-img">
+                            <img src="~/img/sumenh4.jpg" alt="">
+                        </div>
+                        <div class="mission_content">
+                            <h6>Với với thị trường</h6>
+                            <p>Cung cấp các sản phẩm với chất lượng quốc tế và phù hợp với con người Việt Nam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Cart-box" class="miniCart">
+        <div class="miniCart-container">
+            <div class="miniCart-header">
+                <div class="miniCart-title">GIỎ HÀNG CỦA BẠN</div>
+                <button class="miniCart-closeBtn">
+                    <svg class="icon_root__7i1Fo" viewBox="0 0 20 20" opacity="1"><path d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z" fill="currentColor"></path></svg>
+                </button>
+            </div>
+            <div class="miniCart-tagline">
+                <i class="fa-solid fa-truck-arrow-right tagline-icon"></i>MIỄN PHÍ VẬN CHUYỂN ĐƠN HÀNG > 700K
+            </div>
+            <div class="miniCart-body">
+                <!-- <div class="miniCart-item">
+                    <div class="cartItem-img">
+                        <img src="https://curnonwatch.com/_next/image/?url=https%3A%2F%2Fshop.curnonwatch.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fd96eb53c23516f6ca600411b8495131f%2Fg%2F_%2Fg.rise.png&w=1920&q=75" alt="">
+                        <button>
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="cartItem-box">
+                        <div class="cartItem-boxInfo">
+                            <h3 class="cartItem-infoName">RISE</h3>
+                            <div class="cartItem-infoPrice">
+                                <p class="cartItem-newPrice" data-value="2000">2.039.000 ₫</p>
+                                <p class="cartItem-newPrice2" data-value="2000">2.039.000 ₫</p>
+                                <div class="soluong">
+                                    <p class="cartItem-oldPrice">số lượng</p>
+                                <input type="number"   name="soLuong" id="soLuong" value="1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="cartItem-itemOption">
+                    <p class="cartItem-option">40MM</p>
+                    <div class="cartItem-btnQuantity">
+                        <button><i class="fa-solid fa-minus"></i></button>
+                        <p class="quantity-text">Qty: 1</p>
+                        <button><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div> -->
+
+            </div>
+            <div class="miniCart-footer">
+                <div class="miniCart-total">
+                    <span class="miniCart-text">Thành tiền:</span>
+                    <span class="miniCart-price">0 ₫</span>
+                </div>
+                <button>
+                    <span>THANH TOÁN NGAY</span>
+                    <svg class="miniCart_ctaBtnRightArrow__5VYQo" viewBox="0 0 12 6" opacity="1" data-projection-id="59"><path fill="currentColor" d="M0.125 2.70484C0.0416667 2.77556 0 2.87279 0 2.99654C0 3.12029 0.0416667 3.22636 0.125 3.31476C0.229167 3.38547 0.354167 3.42083 0.5 3.42083H10.2812L8.15625 5.25058C7.90625 5.44504 7.89583 5.64835 8.125 5.86049C8.375 6.05496 8.61458 6.04612 8.84375 5.83397L11.8438 3.28824C11.9063 3.25288 11.9479 3.20869 11.9688 3.15565C11.9896 3.10261 12 3.04958 12 2.99654C12 2.94351 11.9896 2.89047 11.9688 2.83743C11.9479 2.7844 11.9063 2.7402 11.8438 2.70484L8.84375 0.159108C8.61458 -0.0530361 8.375 -0.0530361 8.125 0.159108C7.89583 0.353574 7.90625 0.54804 8.15625 0.742506L10.2812 2.57225H0.5C0.354167 2.57225 0.229167 2.61645 0.125 2.70484Z"></path></svg>
+                </button>
+                <!-- <div class="miniCart-estimationText">
+                    *Ước lượng thời gian ship:
+                    <span class="miniCart-estimationDate">23/08/2022</span>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Thông tin chung</h5>
+                        <h4>Công ty TNHH Hoàng Hoan</h4>
+                        <ul class="footer_item-a">
+                            <li>
+                                <a href="#">
+                                    <i class="item fa-solid fa-phone"></i>
+                                    0999.999.999
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="item fa-regular fa-envelope"></i>
+                                    Cskh@hoanghoan.vn
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Số 1 Nguyễn Trãi, Thanh Xuân, Hà Nội
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Về chúng tôi</h5>
+                        <ul class="footer_item-b">
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Sản phẩm</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Đối tác</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Kết nối với chúng tôi</h5>
+                        <ul class="footer_icon">
+                            <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        button2 = document.querySelector(".HeaderMobile .button2");
+        button2.onclick = function () {
+            menuMain = document.querySelector(".HeaderMobile .menuMain");
+            menuMain.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

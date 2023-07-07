@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.HeaderPC{
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+
+.HeaderMobile .container{
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+
+.HeaderMobile {
+    display: none;
+}
+
+.menuMain ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.9rem;
+}
+
+.HeaderPC .menuMain ul > li > a {
+    position: relative;
+}
+
+.HeaderPC .menuMain ul > li > a::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    left: 0;
+    top: 100%;
+    border: 2px solid #bd945f;
+    animation: menuHover .2s ease-in 1;  
+    display: none;
+}
+
+.HeaderPC .menuMain ul  li.activeS a::before,
+.HeaderPC .menuMain ul > li:hover > a::before {
+    border-color: #bd945f;
+    display: block;
+}
+
+@keyframes menuHover{
+    from { 
+        width : 0; 
+        opacity: 0; 
+    }
+    to { 
+        width: 60%; 
+        opacity: 1 ;
+    }
+}
+
+.menuMain ul li{
+    list-style: none;
+}
+
+.menuMain ul li a {
+    display: block;
+    text-decoration: none;
+    color: rgba(0,0,0,.9);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.iconHeader {
+    display: flex;
+    justify-content: center; 
+}
+
+.iconHeader  i {
+    color: rgba(0,0,0,.9);
+    font-size: 1.3rem;
+    padding: 0 8px 14px 8px;
+
+}
+
+.iconCart {
+    cursor: pointer;
+}
+
+.button2 {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .HeaderMobile {
+        display: block;
+    }
+
+    .HeaderPC {
+        display: none;
+    }
+
+    .HeaderMobile .iconHeader {
+        right: 36px;
+    }
+
+    .HeaderMobile .button2 {
+        display: block;
+        cursor: pointer;
+        left: 40px;
+    }
+
+    .HeaderMobile .button2 .span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: rgba(0,0,0,.9);
+        margin: 6px auto;
+    }
+
+    .HeaderMobile .menuMain {
+        height: 0;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #f8f8fa;
+        transition: 0.2s;
+        overflow: hidden;
+        z-index: 100;
+    }
+
+    .HeaderMobile .menuMain.active {
+        height: 350px;
+    }
+
+    .HeaderMobile .menuMain ul {
+        display: block;
+        width: fit-content;
+        margin: 40px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .HeaderMobile .menuMain.active ul {
+        opacity: 1;
+    }
+
+    .HeaderMobile .menuMain ul li a {
+        margin-bottom: 12px;
+    }
+}

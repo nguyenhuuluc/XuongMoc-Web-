@@ -1,0 +1,101 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = XMDEV
+build_property.RootNamespace = XMDEV
+build_property.ProjectDir = F:\BackEnd\XMDEV\XMDEV\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = F:\BackEnd\XMDEV\XMDEV
+build_property._RazorSourceGeneratorDebug = 
+
+[F:/BackEnd/XMDEV/XMDEV/Areas/admin/Views/Home/AddPrd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcSG9tZVxBZGRQcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BackEnd/XMDEV/XMDEV/Areas/admin/Views/Home/EditPrd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcSG9tZVxFZGl0UHJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BackEnd/XMDEV/XMDEV/Areas/admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BackEnd/XMDEV/XMDEV/Areas/admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BackEnd/XMDEV/XMDEV/Views/Home/CreateAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BackEnd/XMDEV/XMDEV/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BackEnd/XMDEV/XMDEV/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BackEnd/XMDEV/XMDEV/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BackEnd/XMDEV/XMDEV/Views/Layout/ChiTietSP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF5b3V0XENoaVRpZXRTUC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BackEnd/XMDEV/XMDEV/Views/Layout/DoiTac.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF5b3V0XERvaVRhYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BackEnd/XMDEV/XMDEV/Views/Layout/GioiThieu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF5b3V0XEdpb2lUaGlldS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BackEnd/XMDEV/XMDEV/Views/Layout/GTTest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF5b3V0XEdUVGVzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BackEnd/XMDEV/XMDEV/Views/Layout/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF5b3V0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BackEnd/XMDEV/XMDEV/Views/Layout/LienHe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF5b3V0XExpZW5IZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BackEnd/XMDEV/XMDEV/Views/Layout/SanPham.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF5b3V0XFNhblBoYW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BackEnd/XMDEV/XMDEV/Views/Layout/TinTuc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF5b3V0XFRpblR1Yy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BackEnd/XMDEV/XMDEV/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BackEnd/XMDEV/XMDEV/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BackEnd/XMDEV/XMDEV/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BackEnd/XMDEV/XMDEV/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BackEnd/XMDEV/XMDEV/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-meerovc86o

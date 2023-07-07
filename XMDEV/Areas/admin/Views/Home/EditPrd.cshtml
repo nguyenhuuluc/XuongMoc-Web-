@@ -1,0 +1,121 @@
+﻿@{
+    Layout = "~/Areas/admin/views/shared/_Layout.cshtml";
+}
+
+<div class="box box-primary">
+    <div class="box-header with-border">
+        <h3 class="box-title">Add / Edit Product</h3>
+    </div>
+    <!-- /.box-header -->
+    <!-- form start -->
+    <div class="enter-form">
+        
+    </div>
+    
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            GetProductDetail();
+        });
+
+        function GetProductDetail() {
+
+            var urlParams = new URLSearchParams(window.location.search);
+            var productId = urlParams.get('id');
+
+            $.ajax({
+                url: '/admin/home/GetProductById/' + productId,
+                method: 'GET',
+                contentType: "application/json",
+                beforeSend: function () {
+                    console.log("before send...!");
+                },
+                success: function (reponse) {
+                    const len = reponse.length;
+                    console.log(reponse);
+                    for (var i = 0; i < len; ++i) {
+                        let cate = reponse[i];
+
+                        let table = `
+                                <form role="form">
+                                    <div class="box-body">
+                                        <input type="number" id="id" value="${cate.id}" hidden="hidden" />
+                                            <div class="form-group">
+                                                <label for="name">Name</label>
+                                                <input type="text" class="form-control" id="name" value="${cate.name}">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="price">Price</label>
+                                                <input type="text" class="form-control" id="price" value="${cate.price}">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="description">Description</label>
+                                                <input type="text" class="form-control" id="description" value="${cate.description}">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="image">Image</label>
+                                                <input type="text" class="form-control" id="image" value="${cate.image}">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="chatlieu">ChatLieu</label>
+                                                <input type="text" class="form-control" id="chatlieu" value="${cate.chatLieu}">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="kichthuoc">KichThuoc</label>
+                                                <input type="text" class="form-control" id="kichthuoc" value="${cate.kichThuoc}">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="mausacban">MauSacBan</label>
+                                                <input type="text" class="form-control" id="mausacban" value="${cate.mauSacBan}">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="baohanh">BaoHanh</label>
+                                                <input type="text" class="form-control" id="baohanh" value="${cate.baoHanh}">
+                                            </div>
+                                    </div>
+
+                                    <div class="box-footer">
+                                        <button type="submit" onclick="add()" class="btn btn-primary">Add</button>
+                                    </div>
+                                </form>`;
+
+                        $('.enter-form').append(table);
+                    }
+                },
+                error: function (response) { },
+            });
+        }
+        function add() {
+            let id = $('#id').val();
+            let obj = {
+                Id: id ? id : 0,
+                Name: $('#name').val(),
+                Price: $('#price').val(),
+                Description: $('#description').val(),
+                Image: $('#image').val(),
+                ChatLieu: $('#chatlieu').val(),
+                KichThuoc: $('#kichthuoc').val(),
+                MauSacBan: $('#mausacban').val(),
+                BaoHanh: $('#baohanh').val()
+            }
+            $.ajax({
+                url: "/admin/home/add",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(obj),
+                beforeSend: function () {
+                    console.log("loading...");
+                },
+                success: function (res) {
+                    window.location.replace("https://localhost:7235/admin/home/index");
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            })
+        }
+    </script>          
